@@ -31,7 +31,7 @@ const PreviousLitters = ({ litters }) => (
 
 
 const CurrentLitter = ({ litter }) => (
-    <div className="mt-4" id="litters">
+    <div className="mt-4" id="currentLitters">
         <div className='p-0'>
             <h2 className="section-heading text-center">Current Puppies</h2>
             <p className='px-2'>
