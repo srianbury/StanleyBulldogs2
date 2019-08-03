@@ -1,13 +1,24 @@
 import stan from '../images/stanley.jpg';
 import hannah from '../images/hannah.jpg';
 import maggie from '../images/maggie.jpg';
-import gusnrosie from '../images/gusnrosie.jpg';
+import gus from '../images/gus.jpg';
+import rosie from '../images/rosie.jpg';
 
-import l01 from '../images/01.jpg';
-import l02 from '../images/02.jpg';
-import l03 from '../images/03.jpg';
-import l04 from '../images/04.jpg';
-import l05 from '../images/05.jpg';
+import l01 from '../images/litter01/01.jpg';
+import l02 from '../images/litter01/02.jpg';
+// import l03 from '../images/litter01/03.jpg';
+import l031 from '../images/litter01/031.jpg';
+import l04 from '../images/litter01/04.jpg';
+import l05 from '../images/litter01/05.jpg';
+
+import l11 from '../images/litter02/01.jpg';
+import l12 from '../images/litter02/02.jpg';
+import l13 from '../images/litter02/03.jpg';
+import l14 from '../images/litter02/04.jpg';
+import l15 from '../images/litter02/05.jpg';
+import l16 from '../images/litter02/06.jpg';
+import l17 from '../images/litter02/07.jpg';
+import l18 from '../images/litter02/08.jpg';
 
 
 const stanleyRecord = {
@@ -34,12 +45,20 @@ const maggieRecord = {
     sex: 'Female',
     age: '1.5 years old'
 };
-const gusnrosieRecord = {
+const gusRecord = {
     id: 4,
-    name: 'Gus and Rosie',
-    desc: 'AKC English Bulldogs',
-    img: gusnrosie,
-    sex: 'Male, Female',
+    name: 'Gus',
+    desc: 'AKC English Bulldog',
+    img: gus,
+    sex: 'Male',
+    age: '9 months old'
+};
+const rosieRecord = {
+    id: 5,
+    name: 'Rosie',
+    desc: 'AKC English Bulldog',
+    img: rosie,
+    sex: 'Female',
     age: '9 months old'
 };
 
@@ -48,7 +67,8 @@ const parents = [
     stanleyRecord,
     hannahRecord,
     maggieRecord,
-    gusnrosieRecord
+    rosieRecord,    
+    gusRecord
 ];
 
 
@@ -61,7 +81,7 @@ const litters = [
         images: [
             { id: 1, img: l01},
             { id: 2, img: l02},
-            { id: 3, img: l03},
+            { id: 3, img: l031},
             { id: 4, img: l04},
             { id: 5, img: l05},
         ]
@@ -69,9 +89,28 @@ const litters = [
 ];
 
 
+const currentLitter = {
+    id: 0,
+    mom: hannahRecord,
+    dad: stanleyRecord,
+    birthday: 'July 2019',
+    images: [
+        { id: 1, img: l11},
+        { id: 2, img: l12},
+        { id: 3, img: l13},
+        { id: 4, img: l14},
+        { id: 5, img: l15},
+        { id: 6, img: l16},
+        { id: 7, img: l17},
+        { id: 8, img: l18},
+    ]
+};
+
+
 const db = {
     parents,
-    litters
+    litters,
+    currentLitter
 };
 
 export default db;

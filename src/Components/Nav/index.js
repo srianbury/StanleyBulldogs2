@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/stan-logo.jpg';
+// import logo from '../../images/stan-logo.jpg';
 
 const Nav = () => (
 	<nav className="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">

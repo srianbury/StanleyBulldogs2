@@ -4,7 +4,7 @@ import Announcements from '../Announcements';
 import Nav from '../Nav';
 import ImageHeader from '../ImageHeader';
 import Parents from '../Parents';
-import Litters from '../Litters';
+import Litters, { CurrentLitter } from '../Litters';
 import Contact from '../Contact';
 
 
@@ -12,7 +12,9 @@ const App = () => (
 	<>
 		<Nav />
 		<ImageHeader />
-		{true && <Announcements />}
+		{false && <Announcements />}
+		<CurrentLitter 
+			litter={db.currentLitter} />
 		<Parents 
             parents={db.parents} />
 		<Litters 

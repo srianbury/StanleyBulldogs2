@@ -4,7 +4,7 @@ const Contact = () => (
 	<div id="contact" className='mt-4'>
 		<div className="container">
 			<div className="row">
-				<a href="tel:+1-480-310-0538" className="col-lg-4 col-md-6 mr-auto text-center">
+				<a href="sms:+1-480-310-0538" className="col-lg-4 col-md-6 mr-auto text-center">
 					<i className="fas fa-phone fa-3x mb-3 sr-contact-1" style={{color:'black'}} />
 					<p>1 480 310 0538</p>
 				</a>

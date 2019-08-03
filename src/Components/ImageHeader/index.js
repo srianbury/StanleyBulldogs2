@@ -19,7 +19,7 @@ const ImageHeader = () => (
 							<div className="p-2">View more photos on Instagram!</div>
 						</a>
 					</div>
-					<a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+					{false && <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>}
 				</div>
 			</div>
 		</div>
