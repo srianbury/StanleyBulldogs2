@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/StanleyBulldogs2/static/js/main.20080cf7.chunk.js",
+    "main.js.map": "/StanleyBulldogs2/static/js/main.20080cf7.chunk.js.map",
+    "runtime~main.js": "/StanleyBulldogs2/static/js/runtime~main.b60b4557.js",
+    "runtime~main.js.map": "/StanleyBulldogs2/static/js/runtime~main.b60b4557.js.map",
+    "static/js/2.16989715.chunk.js": "/StanleyBulldogs2/static/js/2.16989715.chunk.js",
+    "static/js/2.16989715.chunk.js.map": "/StanleyBulldogs2/static/js/2.16989715.chunk.js.map",
+    "index.html": "/StanleyBulldogs2/index.html",
+    "precache-manifest.bcce7c3c2e407f19eafb560c7521a62c.js": "/StanleyBulldogs2/precache-manifest.bcce7c3c2e407f19eafb560c7521a62c.js",
+    "service-worker.js": "/StanleyBulldogs2/service-worker.js",
+    "static/media/01.jpg": "/StanleyBulldogs2/static/media/01.1d11222c.jpg",
+    "static/media/02.jpg": "/StanleyBulldogs2/static/media/02.75907b6c.jpg",
+    "static/media/03.jpg": "/StanleyBulldogs2/static/media/03.a97374e9.jpg",
+    "static/media/04.jpg": "/StanleyBulldogs2/static/media/04.89496bc2.jpg",
+    "static/media/05.jpg": "/StanleyBulldogs2/static/media/05.2c172bdc.jpg",
+    "static/media/gusnrosie.jpg": "/StanleyBulldogs2/static/media/gusnrosie.98f163b5.jpg",
+    "static/media/hannah.jpg": "/StanleyBulldogs2/static/media/hannah.39cde34e.jpg",
+    "static/media/maggie.jpg": "/StanleyBulldogs2/static/media/maggie.43242202.jpg",
+    "static/media/stan-logo.jpg": "/StanleyBulldogs2/static/media/stan-logo.e2aae9b5.jpg",
+    "static/media/stanley.jpg": "/StanleyBulldogs2/static/media/stanley.7ad97443.jpg"
+  }
+}
