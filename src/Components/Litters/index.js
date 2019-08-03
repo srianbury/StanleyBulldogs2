@@ -8,9 +8,9 @@ const Litters = ({ litters }) => (
             <div className="container-fluid p-0">
                 {litters.map(litter => 
                     <React.Fragment key={litter.id}>
-                        <div className='ml-2'>
+                        <div className='m-2'>
                             <h6>Made with <i className='fa fa-heart' /> by {litter.mom.name} and {litter.dad.name}</h6>
-                            <h6>{litter.birthday}</h6>
+                            <h6>Born in {litter.birthday}</h6>
                         </div>
                         <div className="row no-gutters">
                             {litter.images.map(img => 
