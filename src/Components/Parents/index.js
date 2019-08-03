@@ -10,10 +10,10 @@ const Parents = ({ parents }) => (
 					<div key={parent.id} className="col-lg-4 col-md-6 text-center">
 						<h3>{parent.name}</h3>
 						<p>{parent.desc}</p>
-						<img className="rounded img-fluid d-block mx-auto" src={parent.img} alt="" />
+						<img className="rounded img-fluid d-block mx-auto" src={parent.img} alt={parent.alt} />
 						<div className="d-flex justify-content-between">
 							<h5 className="p-2">{parent.sex}</h5>
-							<h5 className="p-2">{parent.age}</h5>
+							<h5 className="p-2">{parent.age}</h5>	
 						</div>
 					</div>
 				)}

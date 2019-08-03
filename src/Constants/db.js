@@ -26,6 +26,7 @@ const stanleyRecord = {
     name: 'Stanley',
     desc: '3/4 English Bulldog, 1/4 Purple-Ribbon Blue Nose Pit Hybrid (Bred for size and health)',
     img: stan,
+    alt: 'bulldog dad',
     sex: 'Male',
     age: '3 years old'
 };
@@ -34,6 +35,7 @@ const hannahRecord = {
     name: 'Hannah',
     desc: 'Olde English Bulldogge',
     img: hannah,
+    alt: 'olde english buldogge',
     sex: 'Female',
     age: '2 years old'
 };
@@ -42,6 +44,7 @@ const maggieRecord = {
     name: 'Maggie',
     desc: 'Pocket Bully',
     img: maggie,
+    alt: 'pocket bully',
     sex: 'Female',
     age: '1.5 years old'
 };
@@ -50,6 +53,7 @@ const gusRecord = {
     name: 'Gus',
     desc: 'AKC English Bulldog',
     img: gus,
+    alt: 'AKC English Bulldog',
     sex: 'Male',
     age: '9 months old'
 };
@@ -58,6 +62,7 @@ const rosieRecord = {
     name: 'Rosie',
     desc: 'AKC English Bulldog',
     img: rosie,
+    alt: 'AKC English Bulldog',
     sex: 'Female',
     age: '9 months old'
 };
@@ -79,11 +84,11 @@ const litters = [
         dad: stanleyRecord,
         birthday: 'August 2018',
         images: [
-            { id: 1, img: l01},
-            { id: 2, img: l02},
-            { id: 3, img: l031},
-            { id: 4, img: l04},
-            { id: 5, img: l05},
+            { id: 1, src: l01, alt:'bulldog puppy' },
+            { id: 2, src: l02, alt:'bulldog puppy' },
+            { id: 3, src: l031, alt:'bulldog puppy' },
+            { id: 4, src: l04, alt:'bulldog puppy' },
+            { id: 5, src: l05, alt:'bulldog puppy' },
         ]
     }
 ];
@@ -95,14 +100,14 @@ const currentLitter = {
     dad: stanleyRecord,
     birthday: 'July 2019',
     images: [
-        { id: 1, img: l11},
-        { id: 2, img: l12},
-        { id: 3, img: l13},
-        { id: 4, img: l14},
-        { id: 5, img: l15},
-        { id: 6, img: l16},
-        { id: 7, img: l17},
-        { id: 8, img: l18},
+        { id: 1, src: l11, alt: 'bulldog puppy' },
+        { id: 2, src: l12, alt: 'bulldog puppy' },
+        { id: 3, src: l13, alt: 'bulldog puppy' },
+        { id: 4, src: l14, alt: 'bulldog puppy' },
+        { id: 5, src: l15, alt: 'bulldog puppy' },
+        { id: 6, src: l16, alt: 'bulldog puppy' },
+        { id: 7, src: l17, alt: 'bulldog puppy' },
+        { id: 8, src: l18, alt: 'bulldog puppy' },
     ]
 };
 

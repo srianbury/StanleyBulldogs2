@@ -17,7 +17,7 @@ const PreviousLitters = ({ litters }) => (
                             {litter.images.map(img => 
                                 <div key={img.id} className="col-lg-4 col-sm-6">
                                     <div className="portfolio-box">
-                                        <img className="img-fluid" src={img.img} alt="" />
+                                        <img className="img-fluid" src={img.src} alt={img.alt} />
                                     </div>
                                 </div>
                             )}
@@ -48,7 +48,7 @@ const CurrentLitter = ({ litter }) => (
                     {litter.images.map(img => 
                         <div key={img.id} className="col-lg-4 col-sm-6">
                             <div className="portfolio-box">
-                                <img className="img-fluid" src={img.img} alt="" />
+                                <img className="img-fluid" src={img.src} alt={img.alt} />
                             </div>
                         </div>
                     )}
