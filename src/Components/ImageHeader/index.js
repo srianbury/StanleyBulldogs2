@@ -11,14 +11,7 @@ const ImageHeader = () => (
 					<hr />
 				</div>
 				<div className="col-lg-8 mx-auto">
-					<div className="d-flex justify-content-center">
-						<a href="https://www.instagram.com/stanleybulldogs/">
-							<i className="fab fa-instagram fa-2x mb-3" />
-						</a>
-						<a href="https://www.instagram.com/stanleybulldogs/" target="_blank" rel="noopener noreferrer">
-							<div className="p-2">View more photos on Instagram!</div>
-						</a>
-					</div>
+					
 					{false && <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>}
 				</div>
 			</div>
