@@ -707,7 +707,7 @@ MagnificPopup.prototype = {
 
 	/*
 		"Private" helpers that aren't private at all
-	 */
+	 */	
 	// Check to close popup or not
 	// "target" is an element that was clicked
 	_checkIfClose: function(target) {
@@ -731,7 +731,7 @@ MagnificPopup.prototype = {
 			// if click is outside the content
 			if(  (target !== mfp.content[0] && !$.contains(mfp.content[0], target))  ) {
 				if(closeOnBg) {
-					// last check, if the clicked element is in DOM, (in case it's removed onclick)
+					// last check, if the clicked element is in DOM, (in case it's removed 	)
 					if( $.contains(document, target) ) {
 						return true;
 					}
