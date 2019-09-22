@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { db } from '../../Constants';
 
 const PreviousLitters = ({ litters }) => (
 	<div className="mt-4" id="litters">
@@ -30,13 +30,12 @@ const PreviousLitters = ({ litters }) => (
 );
 
 
-const CurrentLitter = ({ litter }) => (
-    <div className="mt-4" id="currentLitters">
+const CurrentLitterBase = ({ litter }) => (
+    <div className="mt-2" id="currentLitters">
         <div className='p-0'>
-            <h2 className="section-heading text-center">Current Puppies</h2>
+            <h2 className="px-2 section-heading">Puppies</h2>
             <p className='px-2'>
-                Hannah and Stanley just had 8 puppies!  
-                The first pick is taken so please let us know if you'd like to reserve a pup :)
+                Hannah and Stanley just had 8 puppies!  Let us know if you'd like to meet them!
             </p>
             <hr className="my-4" />
             <div className="container-fluid p-0">
@@ -48,7 +47,7 @@ const CurrentLitter = ({ litter }) => (
                     {litter.images.map(img => 
                         <div key={img.id} className="col-lg-4 col-sm-6">
                             <div className="portfolio-box">
-                                <img className="img-fluid" src={img.src} alt={img.alt} />
+                                <img className="img-fluid" src={img.src} alt={img.alt} style={{width:'100%'}}/>
                             </div>
                         </div>
                     )}
@@ -58,5 +57,26 @@ const CurrentLitter = ({ litter }) => (
 	</div>
 );
 
-export default PreviousLitters;
-export { CurrentLitter };
+const PrevListWrapper = () => (
+    <PreviousLitters 
+        litters={db.litters} />
+);
+
+const CurrentLitter = () => (
+    <CurrentLitterBase 
+        litter={db.currentLitter} />
+);
+
+const Litters = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    }, []);
+    return(
+        <>
+            <CurrentLitter />
+            <PrevListWrapper />
+        </>
+    );
+};
+
+export default Litters;

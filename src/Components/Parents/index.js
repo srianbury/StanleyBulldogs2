@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { db } from '../../Constants';
 
 const Parents = ({ parents }) => (
-	<div id="parents" className='mt-4'>
-		<h2 className="section-heading text-center">Parents</h2>
-		<hr className="my-4" />
+	<div id="parents" className='mt-2'>
+		<h2 className="section-heading px-2">Parents</h2>
 		<div className="container">
 			<div className="row justify-content-center">
 				{parents.map(parent => 
@@ -22,4 +22,14 @@ const Parents = ({ parents }) => (
 	</div>
 );
 
-export default Parents;
+const ParentsWrapper = () => {
+	useEffect(()=>{
+		window.scrollTo(0, 0);
+	}, []);
+	return(
+		<Parents 
+        	parents={db.parents} />
+	);
+};
+
+export default ParentsWrapper;
