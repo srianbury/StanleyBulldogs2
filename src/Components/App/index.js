@@ -15,10 +15,10 @@ const App = () => (
 		{false && <Announcements />}
 		<CurrentLitter 
 			litter={db.currentLitter} />
-		<Parents 
-            parents={db.parents} />
 		<Litters 
             litters={db.litters} />
+		<Parents 
+            parents={db.parents} />
 		<Contact />
 	</>
 );

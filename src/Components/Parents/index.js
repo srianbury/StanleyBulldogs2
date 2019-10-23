@@ -2,8 +2,8 @@ import React from 'react';
 
 const Parents = ({ parents }) => (
 	<div id="parents" className='mt-4'>
-		<h2 className="section-heading text-center">Parents</h2>
 		<hr className="my-4" />
+		<h2 className="section-heading text-center">Parents</h2>
 		<div className="container">
 			<div className="row justify-content-center">
 				{parents.map(parent => 
