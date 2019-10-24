@@ -35,7 +35,7 @@ import l28 from '../images/litter02/18.jpg';
 const stanleyRecord = {
     id: 1,
     name: 'Stanley',
-    desc: '3/4 English Bulldog, 1/4 Purple-Ribbon Blue Nose Pit Hybrid (Bred for size and health)',
+    desc: '', // '3/4 English Bulldog, 1/4 Purple-Ribbon Blue Nose Pit Hybrid (Bred for size and health)',
     img: stan,
     alt: 'bulldog dad',
     sex: 'Male',
